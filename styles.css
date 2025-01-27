@@ -25,7 +25,6 @@ header {
     text-align: center;
     position: fixed; 
     width: 100vw;
-    
 }
 
 .logo {
@@ -171,6 +170,31 @@ h1 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.google-map{
+    width: 40%;
+}
+
+.contact-text{
+    width: 40%;
+    text-align: right;
+    font-size: 1.6rem;
+}
+.kontakt-title{
+    font-family: var(--subtitle-text);
+}
+.small{
+    font-size: 1rem;
+}
+.small:hover{
+    font-size: 1.2rem;
 }
 footer {
     height: 50px;

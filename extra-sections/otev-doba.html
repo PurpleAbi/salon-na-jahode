@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +12,51 @@
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li class="nav-list-item"><a href="sluzby.html">Služby</a></li>
-                <li class="nav-list-item"><a href="./kontaktujete-nas.html">O nás</a></li>
+                <li class="nav-list-item"><a class="nav-a" href="sluzby.html">Služby</a></li>
+                <li class="nav-list-item"><a class="nav-a" href="./kontaktujete-nas.html">O nás</a></li>
             </ul>
             <a href="../index.html"><img class="logo" src="../assets/strawberry.png" alt="Jahodě Logo"></a>
             <ul>
-                <li class="nav-list-item"><a href="otev-doba.html">Otevírací Doba</a></li>
-                <li class="nav-list-item"><a href="./kontaktujete-nas.html">Kontakt</a></li>
+                <li class="nav-list-item"><a class="nav-a" href="otev-doba.html">Otevírací Doba</a></li>
+                <li class="nav-list-item"><a class="nav-a" href="./kontaktujete-nas.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
+    <div class="container-extras">
+        <h1 class="title-extras">Čas se může ližit dle objednávek</h1>
+        <div class="grid-od">
+            <div class="section-schedule">
+                <h2>Lichý Týden</h2> <hr>
+                <div class="text-schedule">
+                    <p>Od pondělí do pátku</p><br>
+                    <p>9:00 - 17:00</p>
+                    <small><p>dle objednání</p></small>
+                </div>
+            </div>
+            <div class="section-schedule">
+                <h2>Sudý Týden</h2><hr>
+                <div class="text-schedule">
+                    <p>Od pondělí do pátku</p><br>
+                    <p>9:00 - 15:00</p>
+                </div>
+            </div>
+            <div class="section-schedule vikend">
+                <h2>Víkend</h2><hr>
+                <div class="text-schedule">
+                    <p>Sobota a Neděle</p>
+                    <p>podle dohody</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>

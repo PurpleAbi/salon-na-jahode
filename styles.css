@@ -52,13 +52,18 @@ ul {
 
 }
 
-a {
+.nav-a{
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+.nav-a:hover {
     color: var(--color-tertiary);
+}
+
+.active{
+    color: white;
+    text-shadow:0 0 20px white, 0 0 30px #f391c2, 0 0 40px #f391c2, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #f40e81, 0 0 80px #f40e81;      
 }
 
 .homepage {
@@ -87,18 +92,8 @@ button:hover{
     color: white;
     font-family: var(--subtitle-text);
 }
-/* .icon-home{
-    margin-bottom: 1rem;
-    padding: 0 .5rem 0 0;
-    width: 1.8rem;
-} */
-.main-img {
-    width: 500px;
-    margin-top: -1rem;
 
-}
-
-h1 {
+.text-homepage h1 {
     padding: 3rem 0 0 0;
     color: var(--color-primary);
     font-size: 4.6rem;
@@ -197,6 +192,62 @@ h1 {
     font-size: 1.2rem;
 }
 footer {
+    padding: 0 0 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
     height: 50px;
     background-color: var(--color-extra);
+    text-align: left;
+}
+
+.container-extras{
+    background-color:var(--color-secondary);
+    background-image: url(./assets/background-lines.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-extras{
+    color: black;
+    font-family: var(--subtitle-text);
+    font-size: 2rem;
+    padding-top: 6rem;
+}
+
+.grid-od{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    background-color: var(--color-tertiary);
+    width: 70%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.1fr 1fr;
+    border: solid black;
+    background-color: rgba(0, 0, 0, 0.543);
+    gap: .7px;
+}
+.text-schedule{
+    display: flex;
+    flex-direction: column;
+    height: 68%;
+    justify-content: center;
+}
+.section-schedule{
+    background-color: var(--color-tertiary);
+}
+.section-schedule h2{
+    padding: .5rem 0;
+}
+.vikend{
+    grid-column: span 2;
+}
+.vikend p{
+    padding: .2rem;
 }

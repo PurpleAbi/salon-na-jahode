@@ -68,7 +68,7 @@ ul {
 
 .homepage {
     background-color:var(--color-secondary);
-    background-image: url(./assets/background-lines.svg);
+    background-image: url(./assets/svgs/background-lines.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,6 +137,8 @@ button:hover{
     justify-content: start;
 }
 .more-a{
+    text-decoration: none;
+    color: black;
     padding-bottom: .5rem;
     border-bottom: 1.3px dotted var(--color-extra);
     font-size: 1.6rem;
@@ -202,16 +204,21 @@ footer {
 }
 
 .container-extras{
-    background-color:var(--color-secondary);
-    background-image: url(./assets/background-lines.svg);
+    background-color:var(--color-tertiary);
+    background-image: url(./assets/svgs/background-lines.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.otev-doba{
+    height: 100vh;
+}
+.sluzby{
+    height: 100vh;
 }
 .title-extras{
     color: black;
@@ -223,13 +230,13 @@ footer {
 .grid-od{
     margin-top: 2rem;
     font-size: 1.2rem;
-    background-color: var(--color-tertiary);
+    background-color: var(--color-secondary);
     width: 70%;
     height: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.1fr 1fr;
-    border: solid black;
+    border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.543);
     gap: .7px;
 }
@@ -240,14 +247,33 @@ footer {
     justify-content: center;
 }
 .section-schedule{
-    background-color: var(--color-tertiary);
+    background-color: var(--color-secondary);
 }
 .section-schedule h2{
     padding: .5rem 0;
+    color: var(--color-primary);
 }
 .vikend{
     grid-column: span 2;
 }
 .vikend p{
     padding: .2rem;
+}
+
+.container-pricing-list{
+    background-color: var(--color-secondary);
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 1.4rem;
+}
+.item-box{
+    border-bottom: 1px solid ;
+}
+.item-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
 }

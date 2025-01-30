@@ -1,6 +1,6 @@
 // let navItems = $(".nav-a");
 
-// console.log(navItems);
+// // console.log(navItems);
 
 // $("body").ready(()=>{
 //     getNavItem();

@@ -3,6 +3,7 @@ let title = $("title").html();
 
 $("body").ready(()=>{
     highlightActiveNavItem();
+    changeTitle()
 });
 
 function highlightActiveNavItem(){
@@ -12,5 +13,20 @@ function highlightActiveNavItem(){
             return item.classList.add("active");
         }
     }
+}
+
+const burger = document.querySelector('.hamburger');
+const navLists = document.querySelectorAll('.nav-list');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navLists.forEach(navList => {
+        navList.classList.toggle('visible');
+    });
+});
+
+function changeTitle(){
+    let changingTitle = $(".changing-title");
+    changingTitle.text(title);
 }
 

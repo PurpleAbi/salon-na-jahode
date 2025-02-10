@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs-CZ">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O nás</title>
@@ -17,14 +17,18 @@
 <body class="nas-body">
     <header>
         <nav>
-            <ul>
+            <ul class="nav-list top">
                 <li class="nav-list-item"><a class="nav-a" href="extra-sections/o-nas.html">O nás</a></li>
                 <li class="nav-list-item"><a class="nav-a" href="otev-doba.html">Otevírací Doba</a></li>
             
             </ul>
-            <a href="../index.html"><img class="logo" src="../assets/strawberry.png" alt="Jahodě Logo"></a>
-            <button class="nav-button"><img class="icon-tabler-menu" src="../assets/menu-2.png" alt="ikonu nabídky"></button>
-            <ul>
+            <a href="../index.html" class="logo-and-changing-title"><img class="logo" src="../assets/strawberry.png" alt="Jahodě Logo"><h1 class="changing-title"></h1></a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <ul class="nav-list">
                 <li class="nav-list-item"><a class="nav-a" href="sluzby.html">Služby</a></li>
                 <li class="nav-list-item"><a class="nav-a" href="./kontaktujete-nas.html">Kontaktujete nas</a></li>
             </ul>
@@ -55,5 +59,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="extras.js"></script>
+    
 </body>
 </html>

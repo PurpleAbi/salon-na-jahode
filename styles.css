@@ -70,7 +70,9 @@ nav ul {
     color: white;
     text-shadow: 0 0 20px var(--color-secondary), 0 0 30px #f391c2, 0 0 40px #f391c2, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #f40e81, 0 0 80px #f40e81;
 }
-
+.changing-title{
+    display: none;
+}
 .homepage {
     background: var(--color-secondary) var(--background-texture);
     background-size: cover;
@@ -520,43 +522,96 @@ textarea {
 .rounded-box img{
     width: 40%;
 }
-
+.hamburger{
+    display: none;
+}
+.line{
+    display: block;
+    width: 2.4rem;
+    height: 3px;
+    margin: 8px;
+    background-color: black;
+    border-radius: 30px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
 @media (max-width: 1000px) {
     body{
-        /* width: 100vw; */
+        width: 100vw;
     }
     header{
         width: 100vw;
-        height: 10vh;
+        height: 80px;
         display: flex;
-        align-items: center;
+        align-items: center; 
     }
     nav{
-        width: 100%;
+        width: 100vw;
+        justify-content: space-around;
         align-items: center;
         gap: 2rem;
     }
-    .nav-list-item{
-        display: none;
+    .logo-and-changing-title{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
     }
     .logo{
-        height: 8vh ;
-        margin: 0 8rem 0 0;
+        height: 78px ;
+        margin: 0;
     }
-    .nav-button{
-        height: 6vh;
-        width: 6vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 0 0 4rem;
-
-    }
-    .icon-tabler-menu{
+    .changing-title{
         display: inherit;
-        height: 4vh;
+        padding: .8rem 0 0 .4rem;
+        color:black;
+        font-family: var(--main-text);
     }
-
+     .hamburger{
+        display: block;
+     }
+    .hamburger.active .line:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .line:nth-child(1){
+        transform: translateY(11px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(3){
+        transform: translateY(-11px) rotate(-45deg);
+    }
+    .nav-list {
+        display: block;
+        left: -100%;
+        position: fixed;
+        top: 370px;
+        gap: 2rem;
+        width: 100vw;
+        background-color: var(--color-secondary);
+        text-align: center;
+        transition: .3s;
+        height: 100vh;
+        font-size: 2rem;
+    }
+    .top{
+        padding-top: 140px;
+        top:80px;
+        height: 300px;
+    }
+    .nav-list-item{ 
+        margin: 1rem 0;
+    }
+    .nav-list.visible{
+        left: 0%;
+    }
+    nav ul{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .active{
+        color: black;
+        text-shadow: none;
+    }
+  
     .section{
         width: 100vw;
     }

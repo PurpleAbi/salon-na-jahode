@@ -190,7 +190,10 @@ button:hover {
     align-items: center;
     width: 100%;
 }
-
+.link-map{
+    text-decoration: none;
+    color: black;
+}
 .contact-text {
     text-align: left;
     font-size: 1.6rem;
@@ -223,9 +226,6 @@ footer {
 }
 footer a:hover{
     color: var(--color-tertiary);
-}
-.footer-o-nas{
-    margin-top: 50%;
 }
 .svg-footer{
     display: flex;

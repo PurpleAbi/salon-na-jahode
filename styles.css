@@ -549,6 +549,9 @@ textarea {
         align-items: center;
         gap: 2rem;
     }
+    .nav-a:hover {
+        color: var(--color-extra);
+    }
     .logo-and-changing-title{
         display: flex;
         align-items: center;

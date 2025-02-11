@@ -688,14 +688,25 @@ textarea {
     .container-extras{
         justify-content: center;
     }
+    .title-extras {
+        padding-top: 8rem;
+    }
     .sluzby-title{
         padding-top: 9rem;
+    }
+    .otev-doba {
+        height: auto;
     }
     .grid-od {
         font-size: 1.4rem;
         width: 80%;
+        height: 80%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: 2rem;
+    }
+    .text-schedule {
+        padding: 1rem 0;
     }
     .vikend {
         grid-column: span 1;

@@ -224,6 +224,9 @@ footer {
 footer a:hover{
     color: var(--color-tertiary);
 }
+.footer-o-nas{
+    margin-top: 50%;
+}
 .svg-footer{
     display: flex;
     align-items: center;
@@ -259,8 +262,7 @@ footer a:hover{
 }
 
 .sluzby {
-    height: auto;
-    padding-bottom: 5%;
+    height: auto;;    
 }
 
 .title-extras {
@@ -316,7 +318,7 @@ footer a:hover{
     background-color: var(--color-secondary);
     width: 90%;
     height: auto;
-    margin-top: 1.4rem;
+    margin: 1.4rem 0  4rem 0;
     cursor: pointer;
     border: 1px solid;
     border-bottom: 0;
@@ -459,12 +461,12 @@ textarea {
 
 .nas-body{
     background-color: var(--color-secondary);
-    height: 190vh;
+    height: auto;
 }
 .o-nas {
     display: flex;
     justify-content: center; 
-    height: 100vh;
+    height: auto;
     padding-top: 4rem; 
 }
 
@@ -483,6 +485,7 @@ textarea {
     background: var(--color-tertiary) var(--background-texture);
     background-size: cover;
     margin-top: 19%;
+    margin-bottom: 3rem;
     border: var(--color-primary) solid 1px;
     border-radius: 50% 50% 0 0;
     display: flex;
@@ -688,6 +691,9 @@ textarea {
     .container-extras{
         justify-content: center;
     }
+    .sluzby{
+        min-height: 100vh;
+    }
     .title-extras {
         padding-top: 8rem;
     }
@@ -711,9 +717,7 @@ textarea {
     .vikend {
         grid-column: span 1;
     }
-    .nas-body{
-        height: auto;
-    }
+
     .image-box{
         width: 100%;
         height: 1340px; 

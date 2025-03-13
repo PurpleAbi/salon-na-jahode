@@ -30,3 +30,7 @@ function changeTitle(){
     changingTitle.text(title);
 }
 
+// function redirectToContactUs() {
+//     window.location.href = './kontaktujete-nas.html';
+// }
+// document.getElementById('otev-doba-btn').onclick = redirectToContactUs;

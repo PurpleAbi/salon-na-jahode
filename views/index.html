@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../public/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,20 +21,28 @@
     <header>
         <nav>
             <ul class="nav-list top">
-                <li class="nav-list-item"><a class="nav-a" href="./extra-sections/o-nas.html">O nás</a></li>
-                <li class="nav-list-item"><a class="nav-a" href="./extra-sections/otev-doba.html">Otevírací Doba</a>
+                <li class="nav-list-item"><a class="nav-a" href="o-nas.html">O nás</a></li>
+                <li class="nav-list-item"><a class="nav-a" href="otev-doba.html">Otevírací Doba</a>
                 </li>
 
             </ul>
-            <a href="#homepage" class="logo-and-changing-title"><img class="logo" src="./assets/strawberry.png" alt="Jahodě Logo"><h1 class="changing-title">NA JAHODĚ</h1></a>
+            <a href="#homepage" class="logo-and-changing-title"><img class="logo" src="../assets/strawberry.png" alt="Jahodě Logo"><h1 class="changing-title">NA JAHODĚ</h1></a>
             <div class="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
             <ul class="nav-list">
-                <li class="nav-list-item"><a class="nav-a" href="./extra-sections/sluzby.html">Služby</a></li>
-                <li class="nav-list-item"><a class="nav-a" href="./extra-sections/kontaktujete-nas.html">Kontaktujete nas</a></li>
+                <li class="nav-list-item"><a class="nav-a" href="sluzby.html">Služby</a></li>
+                <li class="nav-list-item"><a class="nav-a" href="kontaktujete-nas.html">Kontaktujete nas</a></li>
+                <br class="hidden-item"><li class="nav-list-item hidden-item"><a class="nav-a" href="index.html">HOME</a></li>
+                <li class="nav-list-item hidden-item"><a class="nav-a fb-icon" href="https://www.facebook.com/profile.php?id=61570093749361"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook-hidden">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg></a></li>
             </ul>
         </nav>
     </header>
@@ -43,49 +51,48 @@
             <div class="text-homepage">
                 <h1>SALON NA JAHODĚ</h1>
                 <h2>Vaše vlasy, náš příběh.</h2>
-                <h3>Profesionální a kreativní péče, která zvýrazní váš styl, krásu a zdraví vlasů.</h3>
-                <button type="button" onclick="redirectToKontaktujteNas()" id="contactButton">kontaktujte
-                    nás</button>
+                <h3>Profesionální a kreativní péče, <br class="hidden-item"> která zvýrazní váš styl,  <br class="hidden-item"> krásu a zdraví vlasů.</h3>
+                <button type="button"><a href="#contact" class="link-contact" ><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-big-down-lines"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 8l-.117 .007a1 1 0 0 0 -.883 .993v1.999l-2.586 .001a2 2 0 0 0 -1.414 3.414l6.586 6.586a2 2 0 0 0 2.828 0l6.586 -6.586a2 2 0 0 0 .434 -2.18l-.068 -.145a2 2 0 0 0 -1.78 -1.089l-2.586 -.001v-1.999a1 1 0 0 0 -1 -1h-6z" /><path d="M15 2a1 1 0 0 1 .117 1.993l-.117 .007h-6a1 1 0 0 1 -.117 -1.993l.117 -.007h6z" /><path d="M15 5a1 1 0 0 1 .117 1.993l-.117 .007h-6a1 1 0 0 1 -.117 -1.993l.117 -.007h6z" /></svg></a></button>
             </div>
         </div>
 
         <div class="section services-sec">
             <div class="container-grid top-bottom">
                 <h3 class="subtitle-service">Damské</h3>
-                <img class="img-services" src="./assets/damske-hair-airblow.jpg" alt="žena si vlasy vyfoukat">
-                <img class="img-services" src="./assets/damske-woman-haircut.jpg" alt="žena ostříhat">
-                <img class="img-services" src="./assets/damske-bleach.jpg" alt="žena s odbarvenými vlasy">
+                <img class="img-services" src="../assets/damske-hair-airblow.jpg" alt="žena si vlasy vyfoukat">
+                <img class="img-services" src="../assets/damske-woman-haircut.jpg" alt="žena ostříhat">
+                <img class="img-services" src="../assets/damske-bleach.jpg" alt="žena s odbarvenými vlasy">
             </div>
             <div class="more">
-                <a class="more-a" href="./extra-sections/sluzby.html">ZOBRAZIT SLUŽBY</a>
+                <a class="more-a" href="sluzby.html">ZOBRAZIT SLUŽBY</a>
             </div>
 
         </div>
 
         <div class="section pink services-sec">
             <div class="container-grid middle">
-                <img class="img-services" src="./assets/panske-man-haircut.jpg" alt="muž ostříhat se strojem">
-                <img class="img-services" src="./assets/panske-man-cut.jpg" alt="muž s ostříháním nůžkami">
-                <img class="img-services" src="assets/panske-beard-trim.jpg" alt="muž s úpravou vousů">
+                <img class="img-services" src="../assets/panske-man-haircut.jpg" alt="muž ostříhat se strojem">
+                <img class="img-services" src="../assets/panske-man-cut.jpg" alt="muž s ostříháním nůžkami">
+                <img class="img-services" src="../assets/panske-beard-trim.jpg" alt="muž s úpravou vousů">
                 <h3 class="subtitle-service panske">Panské</h3>
             </div>
             <div class="more middle-bottom">
-                <a class="more-a" href="./extra-sections/sluzby.html">ZOBRAZIT SLUŽBY</a>
+                <a class="more-a" href="sluzby.html">ZOBRAZIT SLUŽBY</a>
             </div>
         </div>
 
         <div class="section services-sec">
             <div class="container-grid top-bottom">
                 <h3 class="subtitle-service">Dětské</h3>
-                <img class="img-services" src="./assets/deti-smiley-kid-getting-haircut-salon-high-angle.jpg"
+                <img class="img-services" src="../assets/deti-smiley-kid-getting-haircut-salon-high-angle.jpg"
                     alt="šťastný chlapec se ostříhat">
-                <img class="img-services" src="./assets/deti-girl-getting-haircut-salon-high-angle.jpg"
+                <img class="img-services" src="../assets/deti-girl-getting-haircut-salon-high-angle.jpg"
                     alt="šťastná dívka ostříhat">
-                <img class="img-services" src="./assets/deti-kid-funny-haircut.jpg"
+                <img class="img-services" src="../assets/deti-kid-funny-haircut.jpg"
                     alt="legrační malý chlapec ostříhat se strojem">
             </div>
             <div class="more">
-                <a class="more-a" href="./extra-sections/sluzby.html">ZOBRAZIT SLUŽBY</a>
+                <a class="more-a" href="sluzby.html">ZOBRAZIT SLUŽBY</a>
             </div>
         </div>
 
@@ -109,7 +116,7 @@
                 </div><br>
                 <div class="info-kontakt"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg><a class="link-contact" href="tel:777646965"><p>+420 777 646 965</p></a></div><br>
                 <div class="info-kontakt"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /> </svg> <a href="https://www.facebook.com/profile.php?id=61570093749361" class="link-contact"><p>Sledujte nás na Facebooku</p></a></div><br>
-                <a class="more-a small" href="./extra-sections/otev-doba.html">ZOBRAZIT OTEVÍRACÍ DOBU</a>
+                <a class="more-a small" href="otev-doba.html">ZOBRAZIT OTEVÍRACÍ DOBU</a>
             </div>
         </div>
     </main>
@@ -134,13 +141,13 @@
                 </svg>
                 <p>2025 Salon na Jahodě, Praha. Některá práva vyhrazena.</p>
             </div>
-            <a class="a-footer-middle" href="">Zásady ochrany osobních údajů</a>
+            <a href="">Zásady ochrany osobních údajů</a>
             <a class="a-footer-edges" href="https://www.linkedin.com/in/abigail-santana-medina-dw2024/">Site designed by
                 Abi</a>
         </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" async></script>
+    <script src="../main.js" async></script>
 </body>
 
 </html>

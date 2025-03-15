@@ -5,7 +5,7 @@
     --color-extra: #a51510a9;
     --main-text: "Roboto Condensed", serif;
     --subtitle-text: "Pacifico", serif;
-    --background-texture: url(./assets/svgs/background-lines.svg) no-repeat center ;
+    --background-texture: url(../assets/svgs/background-lines.svg) no-repeat center ;
    
 }
 
@@ -34,6 +34,9 @@ header {
 .logo {
     height: 4rem;
     margin: 0 2rem;
+}
+.hidden-item{
+    display: none;
 }
 nav {
     display: flex;
@@ -64,6 +67,17 @@ nav ul {
     color: var(--color-tertiary);
 }
 
+.fb-icon{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 ;
+    background-color: var(--color-tertiary);
+    cursor: pointer;
+}
+.icon-tabler-brand-facebook-hidden{
+    width: 3rem;
+    height: 2rem;
+}
 .active {
     color: white;
     text-shadow: 0 0 20px var(--color-secondary), 0 0 30px #f391c2, 0 0 40px #f391c2, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #f40e81, 0 0 80px #f40e81;
@@ -81,7 +95,7 @@ nav ul {
 
 button {
     margin-top: 1.4rem;
-    padding: 1rem 2rem;
+    padding: .4rem 2rem 0 1.3rem ;
     background-color: var(--color-tertiary);
     border: solid var(--color-primary);
     border-radius: 20px;
@@ -89,7 +103,7 @@ button {
     font-size: 1.1rem;
     transition: 1s;
     text-align: center;
-    width: 12rem;
+    width: 6rem;
     height: 4rem;
     cursor: pointer;
 }
@@ -99,14 +113,28 @@ button:hover {
     color: white;
     font-family: var(--subtitle-text);
 }
-
+.icon-tabler-arrow-big-down-lines{
+    color: var(--color-primary);
+    width: 3.2rem;
+    height: 3.2rem ;
+    transition: .5s;
+    cursor: pointer;
+}
+.icon-tabler-arrow-big-down-lines:hover{
+    color: white;
+    width: 3.2rem;
+    height: 3.2rem ;
+}
 .text-homepage h1 {
-    padding: 3rem 0 0 0;
+    padding: 3rem 0 1rem 0;
     color: var(--color-primary);
     font-size: 4.6rem;
 
 }
 
+.text-homepage h2, h3{
+    margin-bottom: 1rem;
+}
 .section {
     height: 100vh;
 }
@@ -166,11 +194,6 @@ button:hover {
 
 }
 
-.sutitle {
-    font-family: var(--subtitle-text);
-    color: var(--color-primary);
-}
-
 .subtitle-service {
     display: flex;
     justify-content: center;
@@ -193,14 +216,13 @@ button:hover {
     align-items: center;
     width: 100%;
 }
-.link-contact{
-    text-decoration: none;
+.link-contact{ 
     color: black;
-}
-.link-contact:hover{
     text-decoration: underline 1.4px var(--color-primary);
     text-decoration-style: dotted ;
-    
+}
+.link-contact:hover{
+    text-decoration: none;
 }
 .contact-text {
     text-align: left;
@@ -428,35 +450,6 @@ details {
     width: 90%;
     height: 90%;
 }
-
-/* .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    padding: 2rem;
-    background: var(--color-tertiary) var(--background-texture);
-    background-size: cover;
-}
-fieldset{
-    border: 1px solid var(--color-extra);
-}
-legend{
-    font-family: var(--subtitle-text);
-    font-size: 1.4rem;
-    color: var(--color-primary);
-}
-.client-name{
-    text-align: left;
-}
-label{
-    margin-left: .6rem;
-}
-.same-row {
-    display: flex;
-    align-items: center;
-} */
-
 .extra-btn {
     width: 12rem;
     height: 3.4rem;
@@ -469,18 +462,6 @@ label{
     background-color: var(--color-tertiary);
     color: black;
 }
-/* input{
-    height: 2rem;
-    padding-left: .6rem;
-    margin: .6rem;
-}
-textarea {
-    resize: none;
-    height: 20vh;
-    font-family: var(--main-text);
-    padding: .6rem;
-    margin: .6rem;
-} */
 
 .nas-body{
     background-color: var(--color-secondary);
@@ -494,7 +475,7 @@ textarea {
 }
 
 .image-box{
-    background: url(assets/images/studioimg.jpg) no-repeat center top fixed;
+    background: url(../assets/images/studioimg.jpg) no-repeat center top fixed;
     background-size: cover;
     width: 94%;
     height: 120%;
@@ -569,6 +550,9 @@ textarea {
         display: flex;
         align-items: center; 
     }
+    .hidden-item{
+        display: inherit;
+    }
     nav{
         width: 100vw;
         justify-content: space-around;
@@ -609,7 +593,7 @@ textarea {
         display: block;
         left: -100%;
         position: fixed;
-        top: 370px;
+        top: 320px;
         gap: 2rem;
         width: 100vw;
         background-color: var(--color-secondary);
@@ -619,7 +603,7 @@ textarea {
         font-size: 2rem;
     }
     .top{
-        padding-top: 140px;
+        padding-top: 90px;
         top:80px;
         height: 300px;
     }
@@ -638,12 +622,14 @@ textarea {
         color: black;
         text-shadow: none;
     }
-  
+    .text-homepage h1{
+        font-size: 4rem;
+    }
     .section{
         width: 100vw;
     }
     .container-grid{
-        gap: .6rem;
+        gap: .4rem;
         height: 80% ;
         width: 90%;
     }
@@ -679,31 +665,6 @@ textarea {
     .section-lg{
         height: auto;
     }
-    /* .form{
-        margin-top: 6vh;
-        width: 90vw;
-        height: 80vh;
-        padding: 1rem ;
-        justify-content: space-evenly;
-        align-items: center;
-    } */
-    /* .same-row {
-        flex-direction: column;
-        width: 70%;
-    }
-    label{
-        margin-left: .4rem;
-    }
-    input{
-        width: 70%;
-        height: 5vh;
-        margin: .4rem;
-    }
-    textarea {
-        width: 90%;
-        margin: .4rem;
-    } */
-
     .extra-btn{
         margin-bottom: 2.4rem ;
     }

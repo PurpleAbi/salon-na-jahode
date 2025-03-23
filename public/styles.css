@@ -593,7 +593,7 @@ details {
         display: block;
         left: -100%;
         position: fixed;
-        top: 320px;
+        top: 280px;
         gap: 2rem;
         width: 100vw;
         background-color: var(--color-secondary);
@@ -601,11 +601,14 @@ details {
         transition: .3s;
         height: 100vh;
         font-size: 2rem;
+        overflow-x: hidden;
+        
     }
     .top{
-        padding-top: 90px;
+        padding-top: 3rem;
         top:80px;
-        height: 300px;
+        height: max-content;
+        z-index: 1;
     }
     .nav-list-item{ 
         margin: 1rem 0;
@@ -618,6 +621,9 @@ details {
         flex-direction: column;
         justify-content: start;
         
+    }
+    .home-list-nav{
+        margin-top: 2.4rem;
     }
     .active{
         color: black;
@@ -727,3 +733,5 @@ details {
         padding: 2rem;
     }
 }
+
+

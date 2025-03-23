@@ -617,6 +617,7 @@ details {
         display: flex;
         flex-direction: column;
         justify-content: start;
+        
     }
     .active{
         color: black;
